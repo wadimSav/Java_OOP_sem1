@@ -3,7 +3,6 @@ package ru.gb.oseminar;
 public class BottleOfWater extends Product {
     private int volume;
 
-
     public BottleOfWater(String name, double cost, int volume) {
         super(name, cost);
         this.volume = volume;
@@ -21,7 +20,7 @@ public class BottleOfWater extends Product {
     public String toString() {
         return "BottleOfWater{" +
                "name='" + super.getName() + '\'' +
-               "volume='" + this.volume + '\'' +
+               ", volume='" + this.volume + '\'' +
                ", cost=" + super.getCost() +
                '}';
     }
@@ -31,11 +30,9 @@ public class BottleOfWater extends Product {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof BottleOfWater)) {
+        if (!(o instanceof BottleOfWater that)) {
             return false;
         }
-
-        BottleOfWater that = (BottleOfWater) o;
 
         return super.getName().equalsIgnoreCase(that.getName())
                && super.getCost() == that.getCost()

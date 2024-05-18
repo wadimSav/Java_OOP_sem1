@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BottleOfWaterVendingMachine implements VendingMachine{
-     List<BottleOfWater> productList;
+    private List<BottleOfWater> productList;
 
     public List<BottleOfWater> getProductList() {
         return productList;
@@ -14,9 +14,6 @@ public class BottleOfWaterVendingMachine implements VendingMachine{
         this.productList = new ArrayList<>(productList);
     }
 
-    public BottleOfWaterVendingMachine(List<BottleOfWater> productList) {
-        this.productList = productList;
-    }
     public BottleOfWater getProduct(String name, int volume) {
         for (BottleOfWater bottleofWater : productList) {
             if (bottleofWater.getName().equals(name) && bottleofWater.getVolume() == volume) {
@@ -25,6 +22,7 @@ public class BottleOfWaterVendingMachine implements VendingMachine{
         }
         return null;
     }
+
     @Override
     public Product getProduct(String name) {
         for (Product product : productList){
