@@ -49,4 +49,14 @@ public class DataService {
         }
         return listUser;
     }
+
+    public Teacher getTeacher () {
+        Teacher teacher = null;
+        for (User user : listUsers) {
+            if (user instanceof Teacher) {
+                teacher = (Teacher) user;
+            }
+        }
+        return teacher;
+    }
 }
