@@ -1,5 +1,9 @@
 package sem_4;
 
+// Класс соответствует следующим принципам SOLID:
+// 1) Single Responsibility Principle. Принцип единственной ответственности.
+// 2) Open-Closed Principle. Принцип открытости/закрытости.
+
 public class User {
     private String firstName;
     private String secondName;

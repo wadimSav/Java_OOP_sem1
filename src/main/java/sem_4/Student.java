@@ -1,5 +1,10 @@
 package sem_4;
 
+// Класс соответствует следующим принципам SOLID:
+// 1) Single Responsibility Principle. Принцип единственной ответственности.
+// 2) Open-Closed Principle. Принцип открытости/закрытости.
+// 3) Liskov Substitution Principle. Принцип подстановки Барбары Лисков.
+
 public class Student extends User implements Comparable<Student>{
     private int studentId;
 

@@ -1,5 +1,8 @@
 package sem_4;
 
+// Класс соответствует следующим принципам SOLID:
+// 1) Single Responsibility Principle. Принцип единственной ответственности.
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

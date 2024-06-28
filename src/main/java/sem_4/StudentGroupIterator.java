@@ -1,5 +1,10 @@
 package sem_4;
 
+// Класс соответствует следующим принципам SOLID:
+// 1) Single Responsibility Principle. Принцип единственной ответственности.
+// 2) Liskov Substitution Principle. Принцип подстановки Барбары Лисков.
+// 3) Interface Segregation Principle. Принцип разделения интерфейса.
+
 import java.util.Iterator;
 import java.util.List;
 
